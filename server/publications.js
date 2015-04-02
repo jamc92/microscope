@@ -1,11 +1,4 @@
-Template.publications.created = function () {
-    //add your statement here 
-};
-
-Template.publications.helpers({
-    //add you helpers here
-});
-
-Template.publications.events({
-    //add your events here
+//Cursor that references to all posts
+Meteor.publish('posts', function(){
+    return Posts.find();
 });
