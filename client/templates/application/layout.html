@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<template name="layout">
+    <div class="container">
+        <header class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <!--Using helper pathFor from Spacebars-->
+                <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>
+            </div>
+        </header>
+        <div id="main" class="row-fluid">
+            <!--Meteor code - punto de inserción de la plantilla -->
+            {{> yield}}
+        </div>
+    </div>
+</template>
