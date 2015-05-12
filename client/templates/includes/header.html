@@ -2,16 +2,19 @@
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="colapse" data-target="#navigation">
-                    <span class="sr-only-">Toggle navigation</span>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="col
+lapse" data-target="#navigation">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!--Using helper pathFor from Spacebars-->
                 <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>
             </div>
-            <div class="collapse navbar-collapse" id="navigattion">
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{pathFor 'postSubmit'}}">Submit Post</a></li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {{> loginButtons}}
                 </ul>
